@@ -4,16 +4,16 @@ using namespace std;
 
 int main()
 {
-	int ausgabe[9];
+	int ausgabe[6];
 
-	for (int i = 0; i < 9; i++)
+	for (int i = 0; i < 6; i++)
 	{
 		int indexzahl = i + 1;
 		do
 		{
 			cout << "Bitte geben Sie die " << indexzahl << ". Zahl ein: ? ";
 			cin >> ausgabe[i];
-		} while (ausgabe[i] > 6 || ausgabe[i] < 0);
+		} while (ausgabe[i] > 6 || ausgabe[i] < 1);
 	}
 
 	cout << "Bitte geben Sie die Suchzahl ein: ? ";
@@ -21,18 +21,21 @@ int main()
 	cin >> suchzahl;
 
 	bool kommtvor = false;
+	int pos;
 
-	for (int i = 0; i < 9; i++)
+	for (int i = 0; i < 6; i++)
 	{
 		if (ausgabe[i] == suchzahl)
 		{
 			kommtvor = true;
+			pos = i + 1;
+			break;
 		}
 	}
 
 	if (kommtvor == true)
 	{
-		cout << "Die Suchzahl kam unter den Eingaben vor." << endl;
+		cout << "Die Suchzahl kam unter den Eingaben an Position " << pos << " vor." << endl;
 	}
 	else
 	{

@@ -20,12 +20,12 @@ int main()
 		cout << "Die " << index << ". eingegebene Zahl lautete: " << ausgabe[i] << endl;
 	}
 
-	if (ausgabe[0] < ausgabe[1])
+	if (ausgabe[0] <= ausgabe[1])
 	{
 		groesste = ausgabe[1];
 		kleinste = ausgabe[0];
 	}
-	else if (ausgabe[0] > ausgabe[1])
+	else if (ausgabe[0] >= ausgabe[1])
 	{
 		kleinste = ausgabe[1];
 		groesste = ausgabe[0];

@@ -14,7 +14,7 @@ int main()
 		{
 			cout << "Bitte geben Sie die " << indexzahl << ". Zahl ein: ? ";
 			cin >> ausgabe[i];
-		} while (ausgabe[i] > 6 || ausgabe[i] < 0);
+		} while (ausgabe[i] > 6 || ausgabe[i] < 1);
 		haeufigkeit[ausgabe[i] - 1] += 1;
 	}
 
