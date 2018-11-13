@@ -20,5 +20,7 @@ int main()
 	{
 		cout << "Das Programm beendet sich jetzt." << endl;
 	}
+
+	//Die Pause ist besonders wichtig.
 	system("pause");
 }
