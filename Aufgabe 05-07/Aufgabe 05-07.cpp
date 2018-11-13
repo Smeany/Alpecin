@@ -10,11 +10,11 @@ int main()
 	cin >> eingabe;
 	if (eingabe != "ende")
 	{
-		for (int i = eingabe.length(), int p = 1; i > 0; i--, p*10) //pls fix me
+		for (int i = eingabe.length(), potenz = 1; i > 0; i--, potenz *= 10)
 		{
-			ausgabe += (int(eingabe[i - 1]) - int('0')) * p;
+			ausgabe += (int(eingabe[i - 1]) - int('0')) * potenz;
 		}
-		cout << "Der doppelte Wert betraegt: " << ausgabe <<endl;
+		cout << "Der doppelte Wert betraegt: " << ausgabe * 2 << endl;
 	}
 	else
 	{
