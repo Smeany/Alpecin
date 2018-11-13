@@ -10,7 +10,7 @@ int main()
 	cin >> eingabe;
 	if (eingabe != "ende")
 	{
-		for (int i = eingabe.length(), int p = 1; i > 0; i--, p*10)
+		for (int i = eingabe.length(), int p = 1; i > 0; i--, p*10) //pls fix me
 		{
 			ausgabe += (int(eingabe[i - 1]) - int('0')) * p;
 		}
